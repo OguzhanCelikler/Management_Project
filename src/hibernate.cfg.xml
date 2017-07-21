@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+<hibernate-configuration>
+  <session-factory>
+    <!-- Database connection settings -->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/deneme</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">68719303</property>
+
+    <!-- JDBC connection pool (use the built-in) -->
+    <property name="connection.pool_size">12</property>
+
+    <!-- SQL dialect -->
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+    <!-- Disable the second-level cache  -->
+    <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+    <!-- Echo all executed SQL to stdout -->
+    <property name="show_sql">true</property>
+     <property name="hibernate.connection.characterEncoding">utf8</property> 
+     
+     
+     
+
+    <!-- Drop and re-create the database schema on startup -->
+    <property name="hbm2ddl.auto">update</property>
+    <mapping class="com.enti.Personel"/>
+    <mapping class="com.enti.Raw"/>
+    <mapping class="com.enti.Recipe"/>
+    <mapping class="com.enti.Ord_list"/>
+    <mapping class="com.enti.Purchase"/>
+    <mapping class="com.enti.Pro_list"/>
+    <mapping class="com.enti.Stock"/>
+    <mapping class="com.enti.Users"/>
+    <mapping class="com.enti.Staff"/>
+    <mapping class="com.enti.Expenses"/>
+    
+    
+     
+    
+    
+    
+    
+     
+    
+  </session-factory>
+</hibernate-configuration>

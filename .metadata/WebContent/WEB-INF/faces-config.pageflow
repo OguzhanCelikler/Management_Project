@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14819126472420" configfile="/proje_66/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index" comment="admin kontrol" id="pf14820059058560" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf14820295546640 pf14820295546651 pf14820295546652 pf14822032343710" path="index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="pro" x="336" y="70" id="pf14820295546653" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14820295546640" path="pro.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="planing" x="228" y="214" id="pf14820295546654" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf14820295546651" path="planing.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="finance" x="49" y="288" id="pf14820295546655" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf14820295546652" path="finance.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin" id="pf14822032343711" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf14822032343710" path="admin.jsp"/>
+  <links id="pf14820295546640" target="pf14820295546653" source="pf14820059058560" outcome="a"/>
+  <links id="pf14820295546651" target="pf14820295546654" source="pf14820059058560" outcome="b"/>
+  <links id="pf14820295546652" target="pf14820295546655" source="pf14820059058560" outcome="c"/>
+  <links id="pf14822032343710" target="pf14822032343711" source="pf14820059058560" outcome="z"/>
+</pageflow:Pageflow>

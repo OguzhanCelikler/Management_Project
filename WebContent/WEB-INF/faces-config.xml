@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+
+<navigation-rule>
+<description>admin kontrol</description>
+<from-view-id>index.jsp</from-view-id>
+<navigation-case>
+<from-outcome>a</from-outcome>
+<to-view-id>pro.jsp</to-view-id>
+</navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+<description>admin kontrol</description>
+<from-view-id>index.jsp</from-view-id>
+<navigation-case>
+<from-outcome>b</from-outcome>
+<to-view-id>planing.jsp</to-view-id>
+</navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+<description>admin kontrol</description>
+<from-view-id>index.jsp</from-view-id>
+<navigation-case>
+<from-outcome>c</from-outcome>
+<to-view-id>finance.jsp</to-view-id>
+</navigation-case>
+</navigation-rule>
+
+
+
+<navigation-rule>
+<description>admin kontrol</description>
+<from-view-id>index.jsp</from-view-id>
+<navigation-case>
+<from-outcome>z</from-outcome>
+<to-view-id>admin.jsp</to-view-id>
+</navigation-case>
+</navigation-rule>
+
+
+
+
+</faces-config>
+
